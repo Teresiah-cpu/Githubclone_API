@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProfileComponent } from './profile/profile.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { GitFormComponent } from './git-form/git-form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProfileComponent,
-    NavbarComponent
+    NavbarComponent,
+    GitFormComponent
   ],
   imports: [
     BrowserModule,
