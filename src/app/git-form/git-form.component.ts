@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ProfileComponent } from '../profile/profile.component';
 // import { timeStamp } from 'console';
 import { ProfileService } from '../profile.service';
 
@@ -26,10 +27,9 @@ export class GitFormComponent implements OnInit {
 
   }
 
-  ngOnInit(): void {
-  }
+
   searchUser(){
-    this.display=false
+    this.display=false;
     this.profileService.updateProfile(this.username);
     this.profileService.getProfileInfo().subscribe((profile)=>{
     this.profile=profile
@@ -42,5 +42,8 @@ export class GitFormComponent implements OnInit {
     });
     
   }
+  ngOnInit(): void {
+  }
 
 }
+

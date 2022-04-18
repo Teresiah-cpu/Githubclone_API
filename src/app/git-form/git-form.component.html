@@ -8,7 +8,7 @@
  </form>
     
 <!-- DISPLAY MY ALREADY DECLARED PROFILE AS WELL AS REPOS -->
-<!-- <div class="container" *ngIf="display">
+<div class="container" *ngIf="display">
     <div class="row">
         <div class="col-md-4 mt-5 mx-auto" *ngIf="info">
 
@@ -45,9 +45,9 @@
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div> 
         <!-- End of my profile card -->
-<!-- 
+
         <div class="col-md-8">
             <div class="row">
                 <div class="col-md-4 card" *ngFor="let repo of repos">
@@ -66,12 +66,16 @@
                     </a>
                 </div>
             </div>
-        </div> -->
-        <!-- End of my repo info section -->
+        </div> 
+         <!-- End of my repo info section  -->
 
-    <!-- </div>
-</div> -->
-    <!-- DISPLAY OTHER USERNAMES PROFILE THAT HAVE BEEN SEARCHED -->
+     </div>
+</div>
+<div>
+    {{profile.login}}
+
+</div>
+    <!-- DISPLAY OTHER USERNAMES PROFILE THAT HAVE BEEN SEARCHED  -->
     <div class="container" *ngIf="!display">
         <div class="row">
             <div class="col-md-4">
@@ -84,7 +88,7 @@
                         <div class="card-body">
                             <div class="d-flex justify-content-center">
                                 <a href="#" class="avatar avatar-xl ">
-                                    <img class="rounded-circle" alt="..." src="{{profile.avatar_url}}">
+                                    <img class="rounded-circle" alt="..." [src]="profile.avatar_url">
                                 </a>
                             </div>
                             <div class="text-center my-6">
@@ -114,7 +118,7 @@
                 </div>
     
             </div>
-            <!-- End of profile card for searched username -->
+            <!-- End of profile card for searched username  -->
     
             <div class="col-md-8 new-users" style="color: rgb(48, 47, 47);">
                 <div class="row">
@@ -122,7 +126,7 @@
                         <div class="mt-8 text-center" *ngIf="repos"><br>
                             <a href="{{profile.html_url}}" class="btn btn-primary btn-sm repo-btn" target="_blank">View
                                 {{profile.login}} Repos</a>
-                            <!-- href="{{repos.html_url}}"  -->
+                             href="{{repos.html_url}}"  
                             <br>
                         </div>
                     </div>
@@ -135,12 +139,12 @@
                     </div>
                 </div>
             </div>
-            <!-- End of repos info for searched username -->
+             <!-- End of repos info for searched username  -->
         </div>
     </div>
 </div>
 
-<!-- <div class="container">
+ <!-- <div class="container">
     <form action="" class="search-form">
         <div class="form-group">
             <input type="search" [(ngModel)]="username" value="" id="username" (keyUp)="searchUser()" name="username"
@@ -166,4 +170,4 @@
     
 
 </div>
- -->
+  -->
