@@ -8,7 +8,7 @@ import { FormsModule } from '@angular/forms';
 import { ProfileComponent } from './profile/profile.component';
 import { UserComponent } from './user/user.component';
 import { RepositoryComponent } from './repository/repository.component';
-import { profile } from 'console';
+import { HttpClientModule } from '@angular/common/http';
 import { ProfileService } from './profile.service';
 
 @NgModule({
@@ -24,7 +24,8 @@ import { ProfileService } from './profile.service';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [ProfileService],
   bootstrap: [AppComponent]

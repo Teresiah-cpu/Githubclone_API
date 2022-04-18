@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { timeStamp } from 'console';
+// import { timeStamp } from 'console';
 import { ProfileService } from '../profile.service';
 
 @Component({
