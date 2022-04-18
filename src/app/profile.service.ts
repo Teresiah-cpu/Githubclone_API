@@ -40,3 +40,7 @@ export class ProfileService {
     console.log(userrepo)
     return userrepo    
   }
+    updateProfile(username:string){
+    this.username = username;
+  }
+}

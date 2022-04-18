@@ -1,7 +1,7 @@
 <form action="" class="search-form" >
     <div class="form-group">
-      <input type="search"[(ngModel)]="username"value="" id="username" name="username" class="form-control" placeholder="username">
+      <input type="search" [(ngModel)]="username" value="" id="username" 
+       (keyUp)="searchUser()" name="username" class="form-control" placeholder="username">
 
     </div>
-    <button type="submit">submit</button>
 </form>

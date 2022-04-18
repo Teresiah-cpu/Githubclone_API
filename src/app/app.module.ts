@@ -8,6 +8,8 @@ import { FormsModule } from '@angular/forms';
 import { ProfileComponent } from './profile/profile.component';
 import { UserComponent } from './user/user.component';
 import { RepositoryComponent } from './repository/repository.component';
+import { profile } from 'console';
+import { ProfileService } from './profile.service';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,7 @@ import { RepositoryComponent } from './repository/repository.component';
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [ProfileService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
