@@ -37,7 +37,6 @@ export class ProfileService {
   getRepos(user: any){
     let userrepo = 
     this.http.get('https://api.github.com/users/'+this.username+'/repos?acess_token='+environment.apiKey); 
-    console.log(userrepo)
     return userrepo    
   }
     updateProfile(username:string){
