@@ -7,6 +7,7 @@ import { GitFormComponent } from './git-form/git-form.component';
 import { FormsModule } from '@angular/forms';
 import { ProfileComponent } from './profile/profile.component';
 import { UserComponent } from './user/user.component';
+import { RepositoryComponent } from './repository/repository.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { UserComponent } from './user/user.component';
     NavbarComponent,
     GitFormComponent,
     ProfileComponent,
-    UserComponent
+    UserComponent,
+    RepositoryComponent
   ],
   imports: [
     BrowserModule,
