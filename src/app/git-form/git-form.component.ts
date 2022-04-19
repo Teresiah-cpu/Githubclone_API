@@ -39,6 +39,7 @@ export class GitFormComponent implements OnInit {
     });
      this.profileService.getProfileInfo().subscribe((info)=>{
       this.info=info
+      console.log(this.info);
     });
     
   }

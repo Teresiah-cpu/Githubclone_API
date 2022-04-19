@@ -1,8 +1,9 @@
 <div class="container">
  <form class="search-form">
         <div class="form-group">
-            <input type="search" [(ngModel)]="username" value="" id="username" (keyUp)="searchUser()" name="username"
+            <input type="search" [(ngModel)]="username" value="" id="username"  name="username"
                 class="form-control" placeholder="username">
+                <button type="submit" (click)="searchUser()">Submit</button>
         </div>
     
  </form>
@@ -126,7 +127,7 @@
                         <div class="mt-8 text-center" *ngIf="repos"><br>
                             <a href="{{profile.html_url}}" class="btn btn-primary btn-sm repo-btn" target="_blank">View
                                 {{profile.login}} Repos</a>
-                             href="{{repos.html_url}}"  
+                             <!-- href="{{repos.html_url}}"   -->
                             <br>
                         </div>
                     </div>
