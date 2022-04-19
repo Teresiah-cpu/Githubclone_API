@@ -1,3 +1,17 @@
 .search-form{
     padding-top: 40px;
 }
+.search-form button{
+    margin: 10px;
+    padding: 10px;
+    width: 100px;
+    /* background-color: white; */
+    border:2px solid #007BFF;
+    
+}
+button:hover{
+    /* background-color: #007BFF; */
+    background: #007BFF;
+    color: white;
+    cursor: pointer;
+}
